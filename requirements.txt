@@ -1,0 +1,9 @@
+chardet==5.2.0
+nltk==3.9.1
+openai==1.78.1
+pandas==2.2.3
+Requests==2.32.3
+tqdm==4.67.1
+transformers==4.49.0
+vllm==0.5.4
+zhconv==1.4.3
