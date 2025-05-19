@@ -228,7 +228,7 @@ def get_score(data):
 
     for item in data:
         judges = item['judges']
-        constraint_extension = item['extend_instruction']
+        constraint_extension = item['contraint_pattern']
 
         constraint_extension_list_num[constraint_extension] += 1
         if sum(judges) == len(judges):
