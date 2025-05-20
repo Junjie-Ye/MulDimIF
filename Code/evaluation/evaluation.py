@@ -228,7 +228,7 @@ def get_score(data):
 
     for item in data:
         judges = item['judges']
-        constraint_extension = item['contraint_pattern']
+        constraint_extension = item['constraint_pattern']
 
         constraint_extension_list_num[constraint_extension] += 1
         if sum(judges) == len(judges):
@@ -323,17 +323,12 @@ def get_score(data):
     # ====================== summarize the above scores ======================
 
     score = {
-        'total_acc': total_acc,
-        'total_acc_macro': total_acc_macro,
-        'total_acc_micro': total_acc_micro,
-        'constraint_extension_list': constraint_extension_list,
-        'constraint_extension_list_macro': constraint_extension_list_macro,
-        'constraint_extension_list_micro': constraint_extension_list_micro,
-        'constraint_type_list': constraint_type_list,
-        'constraint_type_second_list': constraint_type_second_list,
+        'constraint_pattern_list': constraint_extension_list,
+        'constraint_category_list': constraint_type_list,
+        'constraint_category_second_list': constraint_type_second_list,
         'constraint_difficulty_list': constraint_difficulty_list,
-        'constraint_difficulty_list_macro': constraint_difficulty_list_macro,
-        'constraint_difficulty_list_micro': constraint_difficulty_list_micro,
+        'Overall': total_acc,
+
     }
 
     return score
