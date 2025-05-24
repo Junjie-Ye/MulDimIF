@@ -190,22 +190,22 @@ To better understand the sources of performance improvement, we conduct a parame
     python Code/instruction_generation/constraint_expansion.py \
       --api_key ${api_key} \
       --base_url ${base_url} \
-      --model ${model}$ \
+      --model ${model} \
       --data_interact_file ${data_interact_file} \
       --data_dict_file ${data_dict_file} \
-      --new_data_dict_file ${new_data_dict_file}$ \
-      --res_output_path ${res_output_path}$
+      --new_data_dict_file ${new_data_dict_file} \
+      --res_output_path ${res_output_path}
     ```
   - Conflict Detection:
     ```bash 
     python Code/instruction_generation/conflict_detection.py \
       --api_key ${api_key} \
       --base_url ${base_url} \
-      --model ${model}$ \
+      --model ${model} \
       --data_interact_file ${data_interact_file} \
       --data_dict_file ${data_dict_file} \
-      --new_data_dict_file ${new_data_dict_file}$ \
-      --res_output_path ${res_output_path}$
+      --new_data_dict_file ${new_data_dict_file} \
+      --res_output_path ${res_output_path}
     ```
   - Instruction Rewriting 
     - For Example Pattern:
@@ -219,10 +219,10 @@ To better understand the sources of performance improvement, we conduct a parame
       python Code/instruction_generation/instruction_rewriting_listing_incorporation.py \
         --api_key ${api_key} \
         --base_url ${base_url} \
-        --model ${model}$ \
+        --model ${model} \
         --data_interact_file ${data_interact_file} \
-        --database_file ${database_file}$ \
-        --res_output_path ${res_output_path}$
+        --database_file ${database_file} \
+        --res_output_path ${res_output_path}
       ```
 
 ## License
